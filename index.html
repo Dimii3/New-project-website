@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -12,6 +13,26 @@
 		<script src="https://kit.fontawesome.com/1ddfd708d9.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<button aria-label="button to control mobile navigation" class="nav-btn">
+			<div class="nav-btn__bars"></div>
+		</button>
+		<nav class="nav">
+			<div class="wrapper">
+				<a href="#" class="nav__logo">Wonders.io</a>
+				<ul class="nav-links">
+					<li class="nav-links__item"><a href="#about" aria-label="section about">About</a></li>
+					<li class="nav-links__item">
+						<a href="#services" aria-label="section services">Services</a>
+					</li>
+					<li class="nav-links__item">
+						<a href="#reviews" aria-label="section reviews">Reviews</a>
+					</li>
+					<li class="nav-links__item">
+						<a href="#contact" aria-label="section contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 		<header class="header">
 			<div class="wrapper">
 				<div class="header-body">
@@ -21,7 +42,9 @@
 						<p class="header-content__description">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nihil.
 						</p>
-						<button class="btn header-content__btn">Register</button>
+						<button class="btn header-content__btn" aria-label="Button to register">
+							Register
+						</button>
 						<div class="stats-box">
 							<div class="stats-item">
 								<p class="stats-item__num">30+</p>
@@ -38,7 +61,10 @@
 						</div>
 					</div>
 					<div class="header-image">
-						<img src="/img/header-bg-removebg-preview-min.png" alt="" class="header-image__img" />
+						<img
+							src="/img/header-bg-removebg-preview-min.png"
+							alt="smiling man in neat clothes"
+							class="header-image__img" />
 					</div>
 				</div>
 			</div>
@@ -74,7 +100,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section benefits" id="benefits">
+			<section class="section benefits" id="about">
 				<div class="wrapper">
 					<div class="benefits-box">
 						<div class="benefits-left">
@@ -93,12 +119,16 @@
 								</div>
 								<div class="benefits-mini-item">
 									<p class="benefits-mini-item__icon">
-                                        <i class="fa-solid fa-arrow-trend-up"></i>
+										<i class="fa-solid fa-arrow-trend-up"></i>
 									</p>
 									<p class="benefits-mini-item__description">Goals</p>
 								</div>
 							</div>
-							<img src="/img/img-sm-min.jpg" alt="" class="benefits-left__img" />
+							<img
+								src="/img/img-sm-min.jpg"
+								alt="woman programming"
+								class="benefits-left__img"
+								loading="lazy" />
 						</div>
 						<div class="benefits-right">
 							<h2 class="benefits-right__heading">
@@ -108,10 +138,10 @@
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde qui architecto
 								repellat animi exercitationem rem recusandae porro esse aliquam iste?
 							</p>
-							<button class="btn">Register</button>
+							<button class="btn" aria-label="button to register">Register</button>
 							<div class="mini-quote">
 								<div class="mini-quote__avatar">
-									<img src="/img/mini-dog-avatar-min.jpg" alt="" />
+									<img src="/img/mini-dog-avatar-min.jpg" alt="dog" loading="lazy" />
 									<p class="mini-quote__name">Jackson Muller</p>
 								</div>
 								<p class="mini-quote__text">
@@ -122,7 +152,246 @@
 					</div>
 				</div>
 			</section>
+			<section class="section info-section">
+				<div class="wrapper">
+					<div class="banner">
+						<div class="banner-content">
+							<h2 class="banner-content__heading">
+								High quality services & innovative solutions for eliable growth.
+							</h2>
+							<p class="banner-content__description">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, aliquid
+								tempora. Tempora dolorem dolorum similique!
+							</p>
+						</div>
+						<button class="btn btn--white" aria-label="Button to get a quote">Get a Quote</button>
+					</div>
+				</div>
+			</section>
+			<section class="section services" id="services">
+				<div class="wrapper">
+					<div class="services-box-top">
+						<h2 class="services-box-top__heading">
+							Service that lead the way to better business.
+						</h2>
+						<div class="services-content">
+							<div class="services-header">
+								<button
+									class="services-header__titles active"
+									aria-label="Button to show more info">
+									About Us
+								</button>
+								<button class="services-header__titles" aria-label="Button to show more info">
+									Mission
+								</button>
+								<button class="services-header__titles" aria-label="Button to show more info">
+									Vision
+								</button>
+							</div>
+							<p class="services-header__text active">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officia saepe
+								provident doloribus molestiae id itaque ex inventore modi non quasi iusto
+								cupiditate, eum, mollitia quibusdam totam distinctio esse deserunt?
+							</p>
+							<p class="services-header__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptatum
+								reprehenderit harum modi dicta ea officia odit soluta dignissimos praesentium?
+							</p>
+							<p class="services-header__text">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, minima
+								illum, debitis eos obcaecati et sed molestias, eaque inventore pariatur a rem
+								<br />
+								esse libero. Minima et tenetur dolorem iste tempore illo minus perferendis
+								maxime sed.
+							</p>
+						</div>
+					</div>
+					<div class="services-box-bottom">
+						<div class="service-card">
+							<p class="service-card__icon">
+								<i class="fa-solid fa-wrench" aria-hidden="true"></i>
+							</p>
+							<h3 class="service-card__title">Business Services</h3>
+							<p class="service-card__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quaerat
+								delectus architecto quos deleniti aspernatur soluta repudiandae nobis? Quidem,
+								minus!
+							</p>
+						</div>
+						<div class="service-card">
+							<p class="service-card__icon">
+								<i class="fa-solid fa-user" aria-hidden="true"></i>
+							</p>
+							<h3 class="service-card__title">Consumer Product</h3>
+							<p class="service-card__text">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, aperiam
+								maiores. Possimus assumenda fuga nulla!
+							</p>
+						</div>
+						<div class="service-card">
+							<p class="service-card__icon">
+								<i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+							</p>
+							<h3 class="service-card__title">Financial Services</h3>
+							<p class="service-card__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, maiores!
+							</p>
+						</div>
+						<div class="service-card">
+							<p class="service-card__icon">
+								<i class="fa-solid fa-eye-slash" aria-hidden="true"></i>
+							</p>
+							<h3 class="service-card__title">Treavel & Aviation</h3>
+							<p class="service-card__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo tenetur
+								aliquid eius odit, doloremque exercitationem.
+							</p>
+						</div>
+						<div class="service-card">
+							<p class="service-card__icon">
+								<i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+							</p>
+							<h3 class="service-card__title">Software Research</h3>
+							<p class="service-card__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quae. Ut magni
+								omnis deserunt, quia, possimus esse ad itaque nulla distinctio repellat fugiat
+								exercitationem quae.
+							</p>
+						</div>
+						<div class="service-card">
+							<p class="service-card__icon">
+								<i class="fa-solid fa-wifi" aria-hidden="true"></i>
+							</p>
+							<h3 class="service-card__title">Quality Resourcing</h3>
+							<p class="service-card__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, suscipit?
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section reviews" id="reviews">
+				<div class="wrapper">
+					<div class="reviews-box">
+						<div class="reviews-image">
+							<img
+								src="/img/men-reviews.sm-removebg-preview-min.png"
+								alt="smiling man holding hat in hand"
+								class="reviews-image__img"
+								loading="lazy" />
+						</div>
+						<div class="carousel-reviews">
+							<div class="carousel-buttons">
+								<button class="prevRev" title="Show previous review">
+									<i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+								</button>
+								<button class="nextRev" title="Show next review">
+									<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="review">
+								<p class="review__icon">
+									<i class="fa-solid fa-quote-right" aria-hidden="true"></i>
+								</p>
+								<p class="review__text">
+									Lorem ipsum, dolor sit amet Lorem ipsum dolor sit, amet consectetur
+									adipisicing elit. Omnis, vero. corporis, ex soluta minus dolorem
+									aspernatur nemo? Ad, praesentium nostrum.
+								</p>
+								<p class="review__author">Mike Johnson</p>
+							</div>
+							<div class="review">
+								<p class="review__icon">
+									<i class="fa-solid fa-quote-right" aria-hidden="true"></i>
+								</p>
+								<p class="review__text">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum
+									dolor sit amet. corporis, ex soluta minus dolorem aspernatur nemo? Ad,
+									praesentium nostrum.
+								</p>
+								<p class="review__author">Sofia Nugget</p>
+							</div>
+							<div class="review">
+								<p class="review__icon">
+									<i class="fa-solid fa-quote-right" aria-hidden="true"></i>
+								</p>
+								<p class="review__text">
+									Lorem ipsum, dolor sit amet corporis, ex soluta minus dolorem aspernatur
+									nemo? Ad, praesentium nostrum.
+								</p>
+								<p class="review__author">Jack Nickel</p>
+							</div>
+							<div class="review">
+								<p class="review__icon">
+									<i class="fa-solid fa-quote-right" aria-hidden="true"></i>
+								</p>
+								<p class="review__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+									accusamus repellendus beatae ea fuga laboriosam, impedit enim minima
+									veniam pariatur maxime dolorum, iure nesciunt quis!
+								</p>
+								<p class="review__author">Mike Dollars</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section contact" id="contact">
+				<h2 class="contact__heading">Contact us</h2>
+				<div class="wrapper">
+					<div class="contact-box">
+						<form class="form">
+							<div class="form-box">
+								<label for="name">Your name</label>
+								<input type="text" id="name" placeholder="Jack Grendy" />
+							</div>
+							<div class="form-box">
+								<label for="email">Enter your email</label>
+								<input type="email" id="email" placeholder="JackGadovsky@email.com" />
+							</div>
+							<div class="form-box">
+								<label for="message">Enter your email</label>
+								<textarea
+									id="message"
+									placeholder="The best company in the world!"></textarea>
+							</div>
+							<button class="form__btn" aria-label="Submit form">Register</button>
+						</form>
+						<div class="contact-socials">
+							<h3 class="contact-socials__heading">You can also find us</h3>
+							<div class="social-box">
+								<a href="#" class="social-box__item" aria-label="Link to Google"
+									><i class="fa-brands fa-square-google-plus" aria-hidden="true"></i
+								></a>
+								<a href="#" class="social-box__item" aria-label="Link to Facebook"
+									><i class="fa-brands fa-square-facebook" aria-hidden="true"></i
+								></a>
+								<a href="#" class="social-box__item" aria-label="Link to Twitter"
+									><i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i
+								></a>
+								<a href="#" class="social-box__item" aria-label="Link to Linkedin"
+									><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+								></a>
+							</div>
+						</div>
+						<div class="contact-address">
+							<h3 class="contact-address__heading">Our location</h3>
+							<p class="contact-address__text">St. Bowie 44, 44-100 - Boston</p>
+							<p class="contact-address__text">St. Crystal 1, 98-222 - New York</p>
+							<p class="contact-address__text">St. Chunk-bao 22, 7-2000 - Tokyo</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<a href="#" class="scroll-top" aria-label="Button to scroll to the top of this site"
+				><i class="fa-solid fa-angle-up" aria-hidden="true"></i
+			></a>
 		</main>
+		<footer class="footer">
+			<p class="footer__text">
+				All rights reserved &copy; Wonders.io <span class="footer-year"></span>
+			</p>
+		</footer>
 		<script src="/js/main.js"></script>
 	</body>
 </html>
