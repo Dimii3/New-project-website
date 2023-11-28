@@ -993,12 +993,23 @@ a {
 }
 
 @media (max-width: 576px) {
+	.header .header-body .header-content .stats-box {
+		margin-top: 2rem;
+	}
+	.header .header-body .header-image {
+		width: 95%;
+	}
 	.benefits .benefits-box .benefits-left {
 		flex-direction: column;
 	}
 	.benefits .benefits-box .benefits-left .benefits-mini-box {
 		width: 100%;
 		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.benefits .benefits-box .benefits-left .benefits-mini-box {
+		padding: 0.5rem;
 	}
 	.benefits .benefits-box .benefits-left .benefits-mini-box .benefits-mini-item {
 		width: 30%;
@@ -1012,11 +1023,26 @@ a {
 	.benefits .benefits-box .benefits-right__description {
 		font-size: 2rem;
 	}
+	.banner {
+		padding: 4rem 2rem;
+		text-align: center;
+	}
 	.services-box-top__heading {
 		font-size: 3.5rem;
 	}
+	.services-box-top .services-content {
+		width: 100%;
+	}
+
+	.services-box-bottom .service-card {
+		padding: 2rem 1rem;
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
 	.contact__heading {
 		font-size: 3.5rem;
+		margin-bottom: 3rem;
 	}
 	.contact .contact-box .form {
 		width: 100%;
@@ -1026,11 +1052,22 @@ a {
 	.reviews-box .carousel-reviews {
 		width: 100%;
 	}
+	.reviews-box .carousel-reviews .review {
+		padding: 0.3rem;
+	}
 	.reviews-box .carousel-reviews .carousel-buttons {
+		bottom: -1rem;
 		left: 50%;
 		transform: translateX(-50%);
+		z-index: 2;
 	}
 	.reviews-box .reviews-image {
-		width: 85%;
+		width: 95%;
+	}
+	.contact .contact-box .form {
+		padding: 0rem;
+	}
+	.btn {
+		width: 100%;
 	}
 }
