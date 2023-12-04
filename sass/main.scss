@@ -20,7 +20,7 @@ body {
 }
 
 .wrapper {
-	max-width: 140rem;
+	max-width: 120rem;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -108,6 +108,7 @@ a {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		max-width: 130rem;
 		height: 100%;
 	}
 	&__logo {
@@ -167,6 +168,9 @@ a {
 	display: flex;
 	width: 100%;
 	background-color: $bgc-dark;
+	.wrapper {
+		max-width: 130rem;
+	}
 	.header-body {
 		display: flex;
 		width: 100%;
@@ -260,8 +264,8 @@ a {
 		.strategy-card {
 			width: 30%;
 			position: relative;
-			padding: 4rem 3rem;
-			min-height: 35rem;
+			padding: 4rem 2rem;
+			min-height: 36rem;
 			background-color: $bgc-white;
 			// border: 3px solid $dark-color;
 			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -277,7 +281,7 @@ a {
 				transform: translateX(-50%);
 			}
 			small {
-				font-size: 3rem;
+				font-size: 4rem;
 				opacity: 0.5;
 			}
 			&__heading {
@@ -320,7 +324,7 @@ a {
 					align-items: center;
 					height: 30%;
 					padding: 2rem;
-					box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+					box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
 					&__icon {
 						color: $main-color;
 						font-size: 3rem;
@@ -352,7 +356,7 @@ a {
 				font-weight: 200;
 			}
 			.mini-quote {
-				width: 50%;
+				width: 55%;
 				padding: 2rem;
 				&__avatar {
 					display: flex;
@@ -408,7 +412,8 @@ a {
 .services-box-top {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 10rem;
+	margin-bottom: 8rem;
+	gap: 2rem;
 	&__heading {
 		width: 60%;
 		font-size: 4rem;
@@ -858,7 +863,8 @@ a {
 		height: 5rem;
 		padding: 0.5rem;
 		border: none;
-		background: transparent;
+		background: $bgc-white;
+		border-radius: 6px;
 		z-index: 101;
 		cursor: pointer;
 		&__bars {
@@ -993,6 +999,9 @@ a {
 }
 
 @media (max-width: 576px) {
+	.section {
+		padding: 8rem 1.5rem;
+	}
 	.header .header-body .header-content .stats-box {
 		margin-top: 2rem;
 	}
