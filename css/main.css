@@ -35,7 +35,7 @@ body {
 
 .btn {
   position: relative;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 6rem;
   font-family: inherit;
   margin: 3rem 0;
   border: none;
@@ -190,16 +190,19 @@ a {
 .header .header-body .header-content small {
   font-size: 1.6rem;
   color: #222;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 .header .header-body .header-content__heading {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #052a45;
   margin-bottom: 2rem;
 }
 .header .header-body .header-content__description {
   font-size: 2.4rem;
   font-weight: 400;
+}
+.header .header-body .header-content__btn {
+  padding: 1.5rem 6rem;
 }
 .header .header-body .header-content .stats-box {
   display: flex;
@@ -678,7 +681,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .contact .contact-box .contact-socials .social-box__item {
   color: #f65001;
@@ -994,8 +997,11 @@ a {
   .services-box-top .services-content {
     width: 100%;
   }
+  .info-section {
+    padding: 0;
+  }
   .services-box-bottom .service-card {
-    padding: 2rem 1rem;
+    padding: 4rem 2rem;
   }
   .services-box-bottom .service-card:not(:last-child) {
     margin-bottom: 1rem;
@@ -1029,5 +1035,11 @@ a {
   }
   .btn {
     width: 100%;
+  }
+  .nav__logo {
+    font-size: 4rem;
+  }
+  .nav .nav-links__item a {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=main.css.map */
